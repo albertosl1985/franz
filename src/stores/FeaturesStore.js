@@ -73,7 +73,7 @@ export default class FeaturesStore extends Store {
   }
 
   _setupFeatures() {
-    delayApp(this.stores, this.actions);
+    /*delayApp(this.stores, this.actions);*/
     spellchecker(this.stores, this.actions);
     serviceProxy(this.stores, this.actions);
     basicAuth(this.stores, this.actions);

@@ -24,9 +24,9 @@ export default class WorkspacesStore extends FeatureStore {
 
   @observable isFeatureActive = false;
 
-  @observable isPremiumFeature = true;
+  @observable isPremiumFeature = false;
 
-  @observable isPremiumUpgradeRequired = true;
+  @observable isPremiumUpgradeRequired = false;
 
   @observable activeWorkspace = null;
 
@@ -113,7 +113,7 @@ export default class WorkspacesStore extends FeatureStore {
       this._disablePremiumFeatures,
       this._openDrawerWithSettingsReaction,
       this._setFeatureEnabledReaction,
-      this._setIsPremiumFeatureReaction,
+      /*this._setIsPremiumFeatureReaction,*/
       this._cleanupInvalidServiceReferences,
     ]);
     this._premiumUserReactions = createReactions([
