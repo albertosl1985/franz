@@ -16,10 +16,10 @@ export default function init(stores) {
   debug('Initializing `serviceProxy` feature');
 
   autorun(() => {
-    const { isServiceProxyEnabled } = stores.features.features; //, isServiceProxyIncludedInCurrentPlan } = stores.features.features;
+    const { isServiceProxyEnabled } = stores.features.features; // , isServiceProxyIncludedInCurrentPlan } = stores.features.features;
 
     config.isEnabled = isServiceProxyEnabled !== undefined ? isServiceProxyEnabled : DEFAULT_FEATURES_CONFIG.isServiceProxyEnabled;
-    config.isIncludedInCurrentPlan = true; //isServiceProxyIncludedInCurrentPlan !== undefined ? isServiceProxyIncludedInCurrentPlan : DEFAULT_FEATURES_CONFIG.isServiceProxyIncludedInCurrentPlan;
+    config.isIncludedInCurrentPlan = true; // isServiceProxyIncludedInCurrentPlan !== undefined ? isServiceProxyIncludedInCurrentPlan : DEFAULT_FEATURES_CONFIG.isServiceProxyIncludedInCurrentPlan;
 
     const services = stores.services.enabled;
     const isPremiumUser = stores.user.data.isPremium;
