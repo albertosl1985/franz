@@ -83,7 +83,7 @@ export default class ServicesStore extends Store {
       this._saveActiveService.bind(this),
       this._logoutReaction.bind(this),
       this._handleMuteSettings.bind(this),
-      /*this._restrictServiceAccess.bind(this),*/
+      /* this._restrictServiceAccess.bind(this), */
     ]);
 
     // Just bind this
