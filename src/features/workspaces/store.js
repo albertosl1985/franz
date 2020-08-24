@@ -113,7 +113,7 @@ export default class WorkspacesStore extends FeatureStore {
       this._disablePremiumFeatures,
       this._openDrawerWithSettingsReaction,
       this._setFeatureEnabledReaction,
-      /*this._setIsPremiumFeatureReaction,*/
+      /* this._setIsPremiumFeatureReaction, */
       this._cleanupInvalidServiceReferences,
     ]);
     this._premiumUserReactions = createReactions([
