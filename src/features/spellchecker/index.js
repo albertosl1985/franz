@@ -4,9 +4,9 @@ import { DEFAULT_FEATURES_CONFIG } from '../../config';
 
 const debug = require('debug')('Franz:feature:spellchecker');
 
-/* export const config = observable({
-  isIncludedInCurrentPlan: DEFAULT_FEATURES_CONFIG.isSpellcheckerIncludedInCurrentPlan,
-}); */
+export const config = observable({
+  /* isIncludedInCurrentPlan: DEFAULT_FEATURES_CONFIG.isSpellcheckerIncludedInCurrentPlan, */
+});
 
 export default function init(stores) {
   debug('Initializing `spellchecker` feature');
