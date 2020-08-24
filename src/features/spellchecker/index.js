@@ -14,7 +14,7 @@ export default function init(stores) {
   autorun(() => {
     const { isSpellcheckerIncludedInCurrentPlan } = stores.features.features;
 
-    config.isIncludedInCurrentPlan = true; /*isSpellcheckerIncludedInCurrentPlan !== undefined ? isSpellcheckerIncludedInCurrentPlan : DEFAULT_FEATURES_CONFIG.isSpellcheckerIncludedInCurrentPlan;*/
+    config.isIncludedInCurrentPlan = true; /* isSpellcheckerIncludedInCurrentPlan !== undefined ? isSpellcheckerIncludedInCurrentPlan : DEFAULT_FEATURES_CONFIG.isSpellcheckerIncludedInCurrentPlan; */
 
     if (!stores.user.data.isPremium && !config.isIncludedInCurrentPlan && stores.settings.app.enableSpellchecking) {
       debug('Override settings.spellcheckerEnabled flag to false');
