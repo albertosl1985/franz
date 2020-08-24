@@ -1,6 +1,6 @@
 import { autorun, observable } from 'mobx';
 
-import { DEFAULT_FEATURES_CONFIG } from '../../config';
+/* import { DEFAULT_FEATURES_CONFIG } from '../../config'; */
 
 const debug = require('debug')('Franz:feature:spellchecker');
 
