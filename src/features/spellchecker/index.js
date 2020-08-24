@@ -4,15 +4,15 @@ import { DEFAULT_FEATURES_CONFIG } from '../../config';
 
 const debug = require('debug')('Franz:feature:spellchecker');
 
-export const config = observable({
+/* export const config = observable({
   isIncludedInCurrentPlan: DEFAULT_FEATURES_CONFIG.isSpellcheckerIncludedInCurrentPlan,
-});
+}); */
 
 export default function init(stores) {
   debug('Initializing `spellchecker` feature');
 
   autorun(() => {
-    const { isSpellcheckerIncludedInCurrentPlan } = stores.features.features;
+    /* const { isSpellcheckerIncludedInCurrentPlan } = stores.features.features; */
 
     config.isIncludedInCurrentPlan = true; /* isSpellcheckerIncludedInCurrentPlan !== undefined ? isSpellcheckerIncludedInCurrentPlan : DEFAULT_FEATURES_CONFIG.isSpellcheckerIncludedInCurrentPlan; */
 
